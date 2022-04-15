@@ -1,0 +1,5 @@
+#Creating fragfile
+fragment system.c new persistent
+set frag system.c
+
+read_pdb file=new.pdb coords=$frag

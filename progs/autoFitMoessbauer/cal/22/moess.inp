@@ -1,0 +1,8 @@
+! bp86 def2-svp
+
+* xyzfile 0 2 geom.xyz
+
+%eprnmr
+nuclei = all Fe {fgrad, rho}
+end
+

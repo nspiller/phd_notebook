@@ -1,0 +1,14 @@
+tart.gbw			# input gbw
+loc_onlyalpha.gbw 	# output gbw
+153 	# orbital window: first orbital to be localized 
+277 	# orbital window: last orbital to be localized 
+2 		# localization method 1=PIPEK-MEZEY,2=FOSTER-BOYS,3=IAO-IBO,4=IAO-BOYS, 5=NEW-BOYS 6=FB AUGHESS
+0 		# operator:0 for alpha, 1 for beta
+1200 	# maximum number of iterations
+1e-6 	# convergence tolerance of the localization functional value
+0.0 	# relative convergence tolerance of the localization functional value
+100 	# printing thresh to call an orbital strongly localized: all should be printed as deloc
+100 	# printing thresh to call an orbital bond-like: all should be printed as deloc
+2		# print level
+1 		# use Cholesky Decomposition (0=false, 1=true, default is true,optional)
+0 		# Randomize seed for localization(optional)

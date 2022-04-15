@@ -1,0 +1,8 @@
+δ   = a * ρ0 + b
+a   = -0.2583391121
+b   = 2891.1213231398
+R   = -0.7473303416
+R^2 = 0.5585026395
+p   = 0.0001524971
+σ   = 0.0541383918
+(according to python package scipy.stats.linregress)

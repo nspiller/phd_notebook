@@ -1,0 +1,19 @@
+7  # Population analysis and atomic charges 
+16 # CM5 atomic charge (because it calculates Hirshfeld as well)
+1  # Use build-in sphericalized atomic densities in free-states (more convenient)
+n  # If outputting atom coordinates with charges to co.molden.chg in current folder? (y/n)
+0  # return main menu
+8  # Orbital composition analysis
+8  # Calculate atom and fragment contributions by Hirshfeld method 
+1  # Use build-in sphericalized atomic densities in free-states (recommended)
+-1 # Print basic information of all orbitals
+-4 # Export composition of every atom in every orbital to orbcomp.txt
+0  # return
+-10 # return main menu
+15 # Fuzzy atomic space analysis  
+1  # Perform integration in fuzzy atomic spaces for a real space function
+5  # Electron spin density
+4  # Calculate localization and delocalization index (Fuzzy bond order)
+y  # If also outputting LI and DI to LIDI.txt in current folder? (y/n) 
+0  # return
+q  # exit

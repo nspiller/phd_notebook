@@ -1,0 +1,25 @@
+These scripts automatize the fitting of the electron density to experimental Mößbauer shifts
+by Nico Spiller (spiller@kofo.mpg.de)
+
+It uses the geometries and isomer shifts reported in https://doi.org/10.1021/ic801535v
+
+Usage:
+
+1) 	remove example calculations from cal/ ( rm -rf cal/* )
+
+2) 	modify template.inp to your desired settings
+
+3) 	run create_inputs.sh
+
+4) 	run all input files, output file must end with *.out  e.g.:
+		for inp in cal/*/inp; do
+			(
+				cd $(dirname $inp)	
+				orca $(basename $inp) > $(basename $inp .inp).out
+			)
+		done
+
+5) 	once calculations are finished (crashed calculations will be ignored), 
+	run fit_script.py, this will create:
+		fit_values.dat: linear regression data
+		fit_plot.pdf: scatter plot with fit
